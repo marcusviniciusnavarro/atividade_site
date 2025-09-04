@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body{
     background-color: #f0ece6;
 }
@@ -10,6 +14,10 @@ p{
     text-align: left;
 }
 
+img{
+    align-items: center;
+}
+
 .column{
     float:left;
     width: 50%;
@@ -17,17 +25,17 @@ p{
 
 }
 
-row::after{
-    content: "";
-  clear: both;
-  display: table;
+.row {
+  display: flex;
+  justify-content: flex-start; /* or center, if you want them centered */
+  gap: 10px; /* optional: space between images */
+}
+
+.column img {
+  width: 100%; /* makes the image fill the column */
+  max-width: 200px; /* optional: set a max width */
+  height: auto;
 }
 .img_g{
     width: 50%;
-}
-
-.img_centro{
-    display: block;
-  margin-left: auto;
-  margin-right: auto;
 }
