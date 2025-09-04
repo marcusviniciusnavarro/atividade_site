@@ -5,7 +5,29 @@ h1{
     font-size: large;
     text-align: center;
 }
-img{
-    align-items: center;
+
+p{
+    text-align: left;
+}
+
+.column{
+    float:left;
     width: 50%;
+    padding: 3px;
+
+}
+
+row::after{
+    content: "";
+  clear: both;
+  display: table;
+}
+.img_g{
+    width: 50%;
+}
+
+.img_centro{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
